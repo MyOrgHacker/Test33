@@ -1,0 +1,10 @@
+name: Default Policy
+
+codescanning:
+  level: Critical
+
+dependabot:
+  level: Critical
+  
+secretscanning:
+  level: Critical
