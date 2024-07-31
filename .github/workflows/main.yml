@@ -22,10 +22,6 @@ permissions:
   id-token: write
 
 jobs:
-  call-Policy-As-Code:
-    uses: MyOrgHacker/Test2/.github/workflows/Pac.yml@main
-    secrets: inherit
-
   call-codeql-workflow:
     uses: MyOrgHacker/Test2/.github/workflows/codeql_new.yml@main
     secrets: inherit
@@ -35,6 +31,5 @@ jobs:
     secrets: inherit
 
   call-docker-workflow:
-    needs: call-Policy-As-Code
     uses: MyOrgHacker/Test2/.github/workflows/docker-image.yml@main
     secrets: inherit
