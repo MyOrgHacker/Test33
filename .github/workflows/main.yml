@@ -30,6 +30,10 @@ jobs:
     uses: MyOrgHacker/Test2/.github/workflows/shiftleft-analysis.yml@main
     secrets: inherit
 
+  call-snykscan-workflow:
+    uses: MyOrgHacker/Test2/.github/workflows/snyk-security.yml@main
+    secrets: inherit  
+
   call-docker-workflow:
     uses: MyOrgHacker/Test2/.github/workflows/docker-image.yml@main
     secrets: inherit
